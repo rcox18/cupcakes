@@ -1,5 +1,5 @@
 <?php
-$cupcakes = array([
+$cupcakes = array(
     "grasshopper"=>"The Grasshopper",
     "maple"=>"Whiskey Maple Bacon",
     "carrot"=>"Carrot Walnut",
@@ -7,4 +7,4 @@ $cupcakes = array([
     "velvet"=>"Red Velvet",
     "lemon"=>"Lemon Drop",
     "tiramisu"=>"Tiramisu"
-]);
+);

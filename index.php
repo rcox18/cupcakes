@@ -19,7 +19,13 @@ include "php/cupcakeList.php";
         Your name:<br>
         <input type="text" name="full-name" id="full-name">
     </label><br>
-
+    <br>
+    <?php
+    foreach ($cupcakes AS $k => $v){
+        echo "<input type='checkbox' name='$k' value='$v'>".$v."<br>";
+    }
+    ?>
+    <br>
     <input type="submit" name="submit-btn" id="submit-btn" value="Order">
 </form>
 </body>
