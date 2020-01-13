@@ -1,3 +1,7 @@
+<?php
+include "php/errors.php";
+include "php/cupcakeList.php";
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,6 +19,7 @@
         Your name:<br>
         <input type="text" name="full-name" id="full-name">
     </label><br>
+
     <input type="submit" name="submit-btn" id="submit-btn" value="Order">
 </form>
 </body>
