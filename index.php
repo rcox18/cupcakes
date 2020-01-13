@@ -1,4 +1,3 @@
-<!--hi hup-->
 <?php
 session_start();
 include "php/errors.php";
