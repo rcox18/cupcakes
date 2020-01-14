@@ -12,6 +12,6 @@ foreach ($_POST["cupcakes"] AS $k => $v){
     echo "<li>$v</li>";
 }
 echo "</ul>";
-echo "Order Total:  {$orderTotal}0
+echo "Order Total:  ".number_format($orderTotal,2)."
 </body>
 </html>";
