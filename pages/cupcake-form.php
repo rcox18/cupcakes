@@ -1,6 +1,6 @@
 <?php
-include "cupcakeList.php";
-include "htmlHead.php";
+include "php/cupcakeList.php";
+include "php/htmlHead.php";
 echo "<h1>Cupcake Fundraiser</h1>
     <form action=\"#\" method=\"post\"
           name=\"cupcake-form\" id=\"cupcake-form\">

@@ -3,17 +3,17 @@ include "php/errors.php";
 include "php/cupcakeList.php";
 if (empty($_POST)) {
     $_POST["stage"] = 1;
-    include "pages/testPage.php";
+    include "php/staging.php";
 } elseif ($_POST["full-name"] == "") {
     if (!isset($_POST["cupcakes"])) {
         $_POST["stage"] = 5;
     } else {
         $_POST["stage"] = 2;
     }
-    include "pages/testPage.php";
+    include "php/staging.php";
 } elseif (!isset($_POST["cupcakes"])) {
     $_POST["stage"] = 3;
-    include "pages/testPage.php";
+    include "php/staging.php";
 } else {
     $isValidCupcake = true;
     foreach ($_POST["cupcakes"] AS $cupcake) {
@@ -24,20 +24,9 @@ if (empty($_POST)) {
 
     if (!$isValidCupcake){
         $_POST["stage"] = 4;
-        include "pages/testPage.php";
+        include "php/staging.php";
     } else {
-        include "php/thank-you-page.php";
-
-        //***********TESTING*******
-        /*foreach ($_POST AS $k => $v) {
-            if (is_array($v)) {
-                foreach ($v AS $item){
-                    echo $k." => ".$item."<br>";
-                }
-            } else {
-                echo $k." => ".$v."<br>";
-            }
-        }*/
+        include "pages/thank-you-page.php";
     }
 }
 
