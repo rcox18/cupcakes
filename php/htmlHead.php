@@ -1,4 +1,14 @@
 <?php
+/**
+ *  This file contains the html opening lines for use
+ *  within the site.
+ *
+ * @author     Robert Cox
+ * @version    1.0.0
+ * @link       http://rcox.greenriverdev.com/IT328/cupcakes
+ * @since      1/13/2020
+ */
+
 echo "<!doctype html>
 <html lang=\"en\">
 <head>
