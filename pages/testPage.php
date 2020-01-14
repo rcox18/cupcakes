@@ -3,6 +3,7 @@ $nameValue = "";
 $errName = "hidden";
 $errCupcakeList = "hidden";
 $errMessage = "required";
+
 if (isset($_POST["stage"])) {
     if ($_POST["stage"] == 1){
         include "php/cupcake-form.php";

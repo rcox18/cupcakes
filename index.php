@@ -1,5 +1,4 @@
 <?php
-session_start();
 include "php/errors.php";
 include "php/cupcakeList.php";
 if (empty($_POST)) {
@@ -27,7 +26,10 @@ if (empty($_POST)) {
         $_POST["stage"] = 4;
         include "pages/testPage.php";
     } else {
-        foreach ($_POST AS $k => $v) {
+        include "php/thank-you-page.php";
+
+        //***********TESTING*******
+        /*foreach ($_POST AS $k => $v) {
             if (is_array($v)) {
                 foreach ($v AS $item){
                     echo $k." => ".$item."<br>";
@@ -35,7 +37,7 @@ if (empty($_POST)) {
             } else {
                 echo $k." => ".$v."<br>";
             }
-        }
+        }*/
     }
 }
 
