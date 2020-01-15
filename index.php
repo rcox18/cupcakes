@@ -10,6 +10,8 @@
  * @link       http://rcox.greenriverdev.com/IT328/cupcakes
  * @since      1/13/2020
  */
+//to be removed
+
 //load resources
 include "php/errors.php";
 include "php/cupcakeList.php";
